@@ -29,9 +29,9 @@ export default function ProveedoresListado({
           {Items &&
             Items.map((Item) => (
               <tr key={Item.id_proveedor}>
-                <td>{Item.nombre_empresa}</td>
-                <td>{Item.nombre_proveedor}</td>
-                <td className="text-end">{Item.telefono}</td>
+                <td className="text-center">{Item.nombre_empresa}</td>
+                <td className="text-center">{Item.nombre_proveedor}</td>
+                <td className="text-center">{Item.telefono}</td>
                 <td className="text-center">
                   {moment(Item.fecha_registro).format("DD/MM/YYYY")}
                 </td>

@@ -29,9 +29,9 @@ export default function ProductosListado({
           {Items &&
             Items.map((Item) => (
               <tr key={Item.id_producto}>
-                <td>{Item.nombre_prod}</td>
-                <td className="text-end">{Item.precio}</td>
-                <td className="text-end">
+                <td className="text-center">{Item.nombre_prod}</td>
+                <td className="text-center">{Item.precio}</td>
+                <td className="text-center">
                   {moment(Item.fecha_elaboracion).format("DD/MM/YYYY")}
                 </td>
                 <td className="text-center">{Item.id_proveedor}</td>
